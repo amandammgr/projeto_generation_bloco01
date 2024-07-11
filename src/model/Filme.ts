@@ -1,9 +1,9 @@
 export abstract class Filme {
 
-private _id: number;
-private _nome: string;
-private _tipo: number;
-private _preco: number;
+	private _id: number;
+	private _nome: string;
+	private _tipo: number;
+	private _preco: number;
 
 	constructor(id: number, nome: string, tipo: number, preco: number) {
 		this._id = id;
@@ -35,7 +35,7 @@ private _preco: number;
 	public set nome(value: string) {
 		this._nome = value;
 	}
-	
+
 	public set tipo(value: number) {
 		this._tipo = value;
 	}
@@ -43,25 +43,25 @@ private _preco: number;
 	public set preco(value: number) {
 		this._preco = value;
 	}
-    public visualizar(): void{
-        let tipo: string = "";
+	public visualizar(): void {
+		let tipo: string = "";
 
-        switch(this._tipo){
-            case 1:
-                tipo = "Romance";
-            break;
-            case 2:
-                tipo = "Terror";
-            break
-        }
-        console.log('\n*******');
-        console.log('Dados do Filme');
-        console.log('\n*******');
-        console.log(`\nNome do Filme: ${this._nome}`);
-        console.log(`\nID do Filme: ${this._id}`);
-        console.log(`\nTipo: ${tipo}`);
-        console.log(`\nPreço: ${this._preco.toFixed(2)}`);
-}
+		switch (this._tipo) {
+			case 1:
+				tipo = "Romance";
+				break;
+			case 2:
+				tipo = "Terror";
+				break
+		}
+		console.log('\n*******');
+		console.log('Dados do Filme');
+		console.log('\n*******');
+		console.log(`\nNome do Filme: ${this._nome}`);
+		console.log(`\nID do Filme: ${this._id}`);
+		console.log(`\nTipo: ${tipo}`);
+		console.log(`\nPreço: ${this._preco.toFixed(2)}`);
+	}
 
 
 }

@@ -1,13 +1,13 @@
 import { Filme } from "./Filme";
 
-export class Terror extends Filme{
+export class Terror extends Filme {
 
-    private _sobrenatural: string;
-    private _suspense: string;
+	private _sobrenatural: string;
+	private _suspense: string;
 
 
 	constructor(nome: string, id: number, tipo: number, preco: number, sobrenatural: string, suspense: string) {
-        super(id, nome, tipo, preco)
+		super(id, nome, tipo, preco)
 		this._sobrenatural = sobrenatural;
 		this._suspense = suspense;
 	}
@@ -28,9 +28,9 @@ export class Terror extends Filme{
 		this._suspense = value;
 	}
 
-    public visualizar(){
-        super.visualizar();
-        console.log(`\nSobrenatural: ${this._sobrenatural}`);
-        console.log(`\nSuspense: ${this._suspense}`);
-     }
+	public visualizar() {
+		super.visualizar();
+		console.log(`\nSobrenatural: ${this._sobrenatural}`);
+		console.log(`\nSuspense: ${this._suspense}`);
+	}
 }

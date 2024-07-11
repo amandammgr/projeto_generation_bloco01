@@ -1,6 +1,6 @@
 import { Filme } from "../src/model/Filme";
 
-export interface FilmeRepository{
+export interface FilmeRepository {
 
     // Métodos do CRUD
 
