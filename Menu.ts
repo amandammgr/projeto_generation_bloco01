@@ -1,5 +1,7 @@
 import readlinesync from "readline-sync";
 import { colors } from "./src/util/Colors";
+import { Romance } from "./src/model/Romance";
+import { Terror } from "./src/model/Terror";
 
 export function main() {
 
